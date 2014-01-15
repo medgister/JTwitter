@@ -621,7 +621,7 @@ public class Twitter implements Serializable {
 	/**
 	 * JTwitter version
 	 */
-	public final static String version = "3.0.0";
+	public final static String version = "3.0.1";
 
 	/**
 	 * The maximum number of characters that a tweet can contain.
@@ -2833,8 +2833,8 @@ public class Twitter implements Serializable {
 	 * if it didn't.<br>
 	 * By default, this only filters DMs.<br>
 	 * Serious checking is switched on via the {@link #WORRIED_ABOUT_TWITTER} flag.
-	 * @param statusText
-	 * @param s
+	 * @param statusText What we meant to send
+	 * @param s What came back
 	 * @return s, or null for DMs
 	 * @throws TwitterException#Unexplained 
 	 */
